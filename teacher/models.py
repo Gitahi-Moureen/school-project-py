@@ -10,7 +10,7 @@ class Teacher(models.Model):
     nationality = models.CharField(max_length=20)
     specialization = models.CharField(max_length=20)
     date_of_birth = models.DateField()
-    years_of_experience = PositiveSmallIntegerField()
+    years_of_experience = models.PositiveSmallIntegerField()
 
     def __str__(self):
         return f"{self.first_name}{self.last_name}"
